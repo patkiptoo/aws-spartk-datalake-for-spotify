@@ -1,7 +1,7 @@
 # aws-spartk-datalake-for-spotify
 Big data processing of spotify listening log data.
 
-## Overview
+## Overview and Purpose
 This is a spark big data application that tested against AWS Spark Cluster emr-5.33.0
 It processes song streaming log data for a streaming app spotify and builds schema on read star schema for anylytics. The logs are read from AWS S3 json format and written as parquet files.
 The following star schema is created.
