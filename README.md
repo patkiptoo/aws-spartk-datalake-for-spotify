@@ -37,13 +37,28 @@ $ /usr/bin/spark-submit --master yarn etl.py
 
 ### Partitioning of parquet data
 
-To improve analytical and further processing the data is partitioned by year and month. 
+To improve analytical and further processing the songplays_table is partitioned by year and month. 
 
 Amazon S3  
   |----spotify-dimensional-model-data-lake  
          |----------songplays_table/  
                   |---------------year=2018/  
                           |-------------------------month=11/  
+                          
+Amazon S3  
+|------spotify-dimensional-model-data-lake  
+|---------------------------------time_table/  
+|----------------------------------------------------year=2018/  
+|---------------------------------------------------------------month=11/ 
+
+
+The song table is partitioned by year then artist
+
+Amazon S3  
+|------spotify-dimensional-model-data-lake  
+|---------------------------------song_table/  
+|----------------------------------------------------year=1964/  
+|---------------------------------------------------------------artist_id=ARAJPHH1187FB5566A/  
 
 
 Following are sample schemas 
