@@ -97,7 +97,7 @@ def main():
     input_data = "s3a://udacity-dend"
     output_data = "s3://spotify-dimensional-model-data-lake"
     
-    ##TODO# process_song_data(spark, input_data, output_data)    
+    process_song_data(spark, input_data, output_data)    
     process_log_data(spark, input_data, output_data)
 
 
