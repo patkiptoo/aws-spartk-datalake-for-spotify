@@ -39,11 +39,11 @@ $ /usr/bin/spark-submit --master yarn etl.py
 
 To improve analytical and further processing the data is partitioned by year and month. 
 
-Amazon S3
-  |----spotify-dimensional-model-data-lake
-         |-----songplays_table/
-                  |----year=2018/
-                          |-------month=11/
+Amazon S3  
+  |----spotify-dimensional-model-data-lake  
+         |----------songplays_table/  
+                  |---------------year=2018/  
+                          |-------------------------month=11/  
 
 
 Following are sample schemas 
